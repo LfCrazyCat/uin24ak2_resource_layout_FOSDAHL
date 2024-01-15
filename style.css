@@ -15,12 +15,18 @@ header {
 
 
 ul {
-  margin: 2.5em;
-  padding: 2em;
+  margin: 1.5em;
+  padding: 1em;
 }
 
+
 article {
-  padding: 30px;
+  padding: 50px;
+}
+
+article h1 {
+  font-weight: bolder; 
+  font-size: 23px;
 }
 
 article p { /* Design for tekst */
@@ -29,22 +35,23 @@ article p { /* Design for tekst */
 }
 
 
-.navbar ul {
+#navbar ul {
   padding: 0;
   margin: 0;
   list-style: none; 
 }
 
-.navbar li {
+#navbar li {
   display: inline-block;
   margin-right: 0.9px;
 }
 
 
-.navbar a {
+#navbar a {
   text-decoration: none;
   color: #fff; /* Farge for tekst */
-  font-weight: bold;
+  font-weight: 1000;
+
   font-size: 20px;
   background-color: #2A324B; /* Bakgrunnsfarge for linkene */
   padding: 30px 30px; /* Padding */
