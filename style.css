@@ -20,6 +20,76 @@ ul {
 }
 
 
+
+
+
+
+/* DESIGN FOR NAVBAR */
+
+#navbar {     
+  position: fixed; /* Lar navmeny alltid være lik */
+  top: -1.4%;
+  padding: 16.2em 0em;
+  margin-left: -5.1%;
+}  
+ 
+ 
+#navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+
+#navbar li {
+  display: inline-block;
+  margin-right: 0.9px;
+}
+
+#navbar ul li a {
+  display: inline-block;
+  height: 2.25em;
+  line-height: 2.25em;
+  padding: 0 3.0em;
+  text-decoration: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff; /* Farge for tekst */
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #2A324B; /* Bakgrunnsfarge for linkene */
+  padding: 1em; /* Padding */
+  text-align: center;
+  position: relative;
+}
+
+
+#nav a:hover { /* Design for når det hovres over en link i navigasjonsmenyen */
+  background-color: #fff;
+  color: black;
+  padding: 0px;
+}
+
+#navbar ul li a:active { /* Design for hva som vises når man er på en link */
+  background-color: #fff;
+  box-shadow: none;
+  color: black;
+}
+
+/* DESIGN FOR NAVBAR FERDIG */
+
+
+
+/* DESIGN FOR SECTION */
+.section {
+}
+
+/* DESIGN FOR SECTION FERDIG */
+
+
+
+/* DESIGN FOR ARTIKKEL */ 
 article {
   padding: 50px;
 }
@@ -34,35 +104,4 @@ article p { /* Design for tekst */
   font-size: 15px;
 }
 
-
-#navbar ul {
-  padding: 0;
-  margin: 0;
-  list-style: none; 
-}
-
-#navbar li {
-  display: inline-block;
-  margin-right: 0.9px;
-}
-
-
-#navbar a {
-  text-decoration: none;
-  color: #fff; /* Farge for tekst */
-  font-weight: 1000;
-
-  font-size: 20px;
-  background-color: #2A324B; /* Bakgrunnsfarge for linkene */
-  padding: 30px 30px; /* Padding */
-  border-radius: 0px; /* Avrunding på kantene */
-}
-
-
-
-
-nav a:hover { /* Design for når det hovres over en link i navigasjonsmenyen */
-  background-color: #fff;
-  color: black;
-  padding: 0px;
-}
+/* DESIGN FOR ARTIKKEL FERDIG */
