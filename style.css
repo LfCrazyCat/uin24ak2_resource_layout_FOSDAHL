@@ -1,17 +1,61 @@
-body {
-  margin: 10rem;
-  padding: 0;
+html {
   background-color: #E1E5EE;
+}
+
+body {
+  margin: 15em;
+  padding: 5em;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
 
 header {
-  background-color: #2A324B;
-  color: #fff;
+  margin: 0em;
 }
 
+
 ul {
-  list-style: none;
-  margin: 0;
+  margin: 2.5em;
+  padding: 2em;
+}
+
+article {
+  padding: 30px;
+}
+
+article p { /* Design for tekst */
+  font-weight: bold; 
+  font-size: 15px;
+}
+
+
+.navbar ul {
   padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 0.9px;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: #fff; /* Farge for tekst */
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #2A324B; /* Bakgrunnsfarge for linkene */
+  padding: 30px 30px; /* Padding */
+  border-radius: 0px; /* Avrunding på kantene */
+}
+
+
+
+
+nav a:hover { /* Design for når det hovres over en link i navigasjonsmenyen */
+  background-color: #fff;
+  color: black;
+  padding: 0px;
 }
