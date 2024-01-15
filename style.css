@@ -1,5 +1,6 @@
 html {
   background-color: #E1E5EE;
+  
 }
 
 body {
@@ -14,22 +15,12 @@ header {
 }
 
 
-ul {
-  margin: 1.5em;
-  padding: 1em;
-}
-
-
-
-
-
-
 /* DESIGN FOR NAVBAR */
 
 #navbar {     
   position: fixed; /* Lar navmeny alltid være lik */
-  top: -1.4%;
-  padding: 16.2em 0em;
+  top: 1%;
+  padding: 10.1em 0em;
   margin-left: -5.1%;
 }  
  
@@ -42,15 +33,17 @@ ul {
 
 #navbar li {
   display: inline-block;
-  margin-right: 0.9px;
+  margin-right: 10px; /* Setter mellomrom mellom elementene */ 
 }
+
 
 #navbar ul li a {
   display: inline-block;
-  height: 2.25em;
-  line-height: 2.25em;
+  height: 3.25em;
+  line-height: 3.25em;
   padding: 0 3.0em;
   text-decoration: none;
+  
 }
 
 #navbar a {
@@ -83,6 +76,7 @@ ul {
 
 /* DESIGN FOR SECTION */
 .section {
+  display: none;
 }
 
 /* DESIGN FOR SECTION FERDIG */
@@ -96,12 +90,22 @@ article {
 
 article h1 {
   font-weight: bolder; 
-  font-size: 23px;
+  font-size: 25px;
+  color: black;
 }
 
 article p { /* Design for tekst */
   font-weight: bold; 
   font-size: 15px;
+  color: black; 
 }
+
+article ul li {
+  display: list-item;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
 
 /* DESIGN FOR ARTIKKEL FERDIG */
