@@ -6,25 +6,28 @@ html {
 }
 
 body {
-  margin: 10em;
-  padding: 4em;
+  margin: 1em;
+  padding: 0em;
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
 }
 
 header {
-  margin: 0;
+  width: 100%;
 }
 
 
 /* DESIGN FOR NAVBAR */
 
 nav {     
-  position: absolute; 
-  top: -5.3%;
-  padding: 10.1em 0em;
-  margin-left: -5.1%;
-  transition: background-color 10.5s;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  background-color: #2A324B;
 }  
  
  
@@ -46,13 +49,14 @@ nav ul li a {
   line-height: 3.25em;
   padding: 0 3.0em;
   text-decoration: none;
+  color: #fff;
   
 }
 
 nav a {
   text-decoration: none;
   color: #fff; /* Farge for tekst */
-  font-weight: bolder;
+  font-weight: 900;
   font-size: 20px;
   background-color: #2A324B; /* Bakgrunnsfarge for linkene */
   padding: 1em; /* Padding */
@@ -60,16 +64,8 @@ nav a {
   position: relative;
 }
 
-
-nav a:hover { /* Design for når det hovres over en link i navigasjonsmenyen */
+nav ul li a:visited {
   background-color: #fff;
-  color: black;
-  padding: 0px;
-}
-
-nav ul li a:active { /* Design for hva som vises når man er på en link */
-  background-color: #fff;
-  box-shadow: none;
   color: black;
 }
 
@@ -80,11 +76,14 @@ nav ul li a:active { /* Design for hva som vises når man er på en link */
 /* DESIGN FOR SECTION */
 section {
   width: 100%; 
+  padding: 5em;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 section h1 {
-  font-size: 900;
+  font-size: 25px;
+  font-weight: 900;
 }
 
 section p { /* Design for tekst */
