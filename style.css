@@ -1,5 +1,6 @@
 html {
   background-color: #E1E5EE;
+  font-family: 'Montserrat', sans-serif;
   
 }
 
@@ -7,7 +8,6 @@ body {
   margin: 15em;
   padding: 5em;
   background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -85,27 +85,45 @@ header {
 
 /* DESIGN FOR ARTIKKEL */ 
 article {
-  padding: 50px;
+  max-width: 850px;
+  min-width: 350px;
+  width: 100%;
 }
 
+
 article h1 {
-  font-weight: bolder; 
-  font-size: 25px;
+  font-weight: 900; 
+  font-size: 20px;
   color: black;
 }
 
 article p { /* Design for tekst */
-  font-weight: bold; 
+  font-weight: 900; 
   font-size: 15px;
   color: black; 
 }
 
 article ul li {
   display: list-item;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 15px;
 }
 
-
-
 /* DESIGN FOR ARTIKKEL FERDIG */
+
+
+/* MEDIA QURIES */
+@media only screen and (min-width: 600px) {
+  #header nav {
+    float: left;
+  }
+
+  #header nav ul {
+    float: right;
+    margin: 0;
+  }
+
+  #header nav ul li {
+    display: inline-block;
+  }
+}
