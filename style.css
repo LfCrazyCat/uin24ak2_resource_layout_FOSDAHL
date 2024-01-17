@@ -98,13 +98,14 @@ section h1 {
 
 section p { /* Design for tekst paragrafer */
   font-weight: 700; 
-  font-size: 20px;
+
+  /* font-size: 19px; */ /* Usikker på font-size som ønskes, lar være å skrive inn */
 }
 
 section ul li {
   display: list-item;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 /* DESIGN FOR SECTION FERDIG */
@@ -116,30 +117,20 @@ section ul li {
 
 /* MEDIA QURIES */
 @media only screen and (min-width: 600px) {
-  #header nav {
-    float: left;
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+   nav ul {
+     justify-content: space-around;
   }
 
-  #header nav ul {
-    float: right;
-    margin: 0;
-  }
 
-  #header nav ul li {
-    display: inline-block;
-  }
-}
 
-@media only screen and (max-width: 800px) {
-  body {
-    min-width: auto; /* Juster som nødvendig  */
-  }
-
-  section {
-    min-width: auto; /* Juster som nødvendig  */
+  nav li {
+    margin-right: 0;
   }
 }
-
 
 
 /* 
