@@ -42,24 +42,11 @@ nav ul {
   display: flex;
 }
 
-/* 
-nav li {
-  margin-right: 10px;  Setter mellomrom mellom elementene 
-} */
-
-/*
-nav ul li a {
-  display: inline-block;
-  height: 3.5em;
-  line-height: 3.5em;
-  padding: 0 3.5em;
-  color: #fff;
-} */
 
 nav ul li a {
   display: inline-block;
-  height: 3.5em;
-  line-height: 3.5em;
+  height: 2em;
+  line-height: 2em;
   padding: 0 1em;
   color: #fff;
 }
@@ -129,10 +116,6 @@ section ul li {
     justify-content: center;
   } 
   
-   nav ul {
-    /* 
-     justify-content: space-around; */
-  }
 
   nav li {
     margin-right: 35px;
@@ -140,16 +123,6 @@ section ul li {
 
   section {
     display: block;
-    position: relative;
   }
 }
 
-
-
-nav ul li a {
-  display: inline-block;
-  height: 3.5em;
-  line-height: 3.5em;
-  padding: 0 1em;
-  color: #fff;
-} 
