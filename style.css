@@ -21,28 +21,31 @@ body {
 header, nav {
   width: 100%;
   background-color: #E1E5EE;
+  position: relative;
   margin: 0;
+  margin-left: 323.1px; /* Eller 20.2em */
 }
 
 
 /* DESIGN FOR NAVBAR */
 
 nav {     
-  padding: 10px;
+  padding: 0;
 }  
  
  
 nav ul {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
+  margin-top: 20em;
   display: flex;
-  justify-content: center;
 }
 
+/* 
 nav li {
-  margin-right: 10px; /* Setter mellomrom mellom elementene */
-}
+  margin-right: 10px;  Setter mellomrom mellom elementene 
+} */
 
 /*
 nav ul li a {
@@ -53,14 +56,21 @@ nav ul li a {
   color: #fff;
 } */
 
+nav ul li a {
+  display: inline-block;
+  height: 3.5em;
+  line-height: 3.5em;
+  padding: 0 1em;
+  color: #fff;
+}
+
 nav a {
   text-decoration: none;
   color: #fff;
-  padding: 10px;
   background-color: #2A324B;
-  display: block;
   text-align: center; 
   font-weight: 900;
+  font-size: 19.99px;
 }
 
 nav ul li a:visited {
@@ -72,11 +82,9 @@ nav ul li a:visited {
 
 /*  HOVEDINNHOLD */ 
 main {
-  flex-grow: 1;
   background-color: #E1E5EE;
   box-sizing: border-box;
-  padding: 20px;
-  margin: 0;
+  padding: 0;
 }
 
 /* HOVEDINNHOLD AVSLUTTER */
@@ -84,14 +92,14 @@ main {
 
 /* DESIGN FOR SECTION */
 section {
-  max-width: 900px;
-  /* margin: 1em; */
-  padding: 5em;
+  max-width: 800px;
+  margin: 0em; /* kan sløyfes */
+  padding: 1em;
   background-color: #fff;
 }
 
 section h1 {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 900;
 }
 
@@ -116,27 +124,32 @@ section ul li {
 
 /* MEDIA QURIES */
 @media only screen and (min-width: 600px) {
+   
   nav {
-    display: flex;
     justify-content: center;
-  }
+  } 
+  
    nav ul {
-     justify-content: space-around;
+    /* 
+     justify-content: space-around; */
   }
-
-
 
   nav li {
-    margin-right: 1;
+    margin-right: 35px;
+  }
+
+  section {
+    display: block;
+    position: relative;
   }
 }
 
 
-/* 
+
 nav ul li a {
   display: inline-block;
   height: 3.5em;
   line-height: 3.5em;
   padding: 0 1em;
   color: #fff;
-} */ 
+} 
