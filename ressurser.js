@@ -16,6 +16,8 @@ const resources = [
                 url: "https://html.com/"
             },
         ]
+
+        console.log(resources[5].category. resources)
     },
     {
         category: "CSS",
