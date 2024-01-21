@@ -6,38 +6,55 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> <!-- Henviser til Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+<!-- Henviser til Google Fonts over -->
+
 <title>Document</title>
+<script src="ressurser.js"></script> <!-- For å sikre at HTML-dom-en er lastet inn før scriptet kjøres -->
 </head>
 <body>
+
+
+  
   <header>
     <nav>
-      <ul>
-        <li><a href="index.html">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="JavaScript.html">JavaScript</a></li>
-        <li><a href="React.html">React</a></li>
-        <li><a href="SanityAndHeadlessCMS.html">Sanity and headless CMS</a></li>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">HTML</a>
+        </li>
+        <li class="nav-item">
+          <a href="css.html">CSS</a>
+        </li>
+        <li class="nav-item">
+          <a href="JavaScript.html">JavaScript</a>
+        </li>
+        <li class="nav-item">
+          <a href="React.html">React</a>
+        </li>
+        <li class="nav-item">
+          <a href="SanityAndHeadlessCMS.html">Sanity and headless CMS</a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main> <!-- Hovedinnhold -->
     <section> <!-- Seksjon for hovedinnhold -->
-        <h1>HTML</h1>
-        <p>HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt. </p>
+        <h1 onclick="innerHTML='Info om det som dreier seg om HTML'">HTML</h1> <!-- Knapp som endrer fra en kortere H1 til mer beskrivende -->
+        <p>HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og 
+          applikasjonsgrensesnitt. </p>
       
         <ul>
           <li>
-            <a href="https://www.w3schools.com/html/">W3schools</a>
+            <a href="https://www.w3schools.com/html/" target="_blank">W3schools</a>
           </li>
       
           <li>
-            <a href="https://html.spec.whatwg.org/multipage/">HTML Living standard</a>
+            <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living standard</a>
           </li>
          
          <li>
-          <a href="https://html.com/">HTML.com Tutorials</a>
+          <a href="https://html.com/" target="_blank">HTML.com Tutorials</a>
          </li> 
         
         </ul>
@@ -46,17 +63,16 @@
 
 
   </main>
+  <footer>
+    <p>Innlevering i emnet UIN</p>
+    <p>Kilde: <a href=</p>
+  </footer>
 
  
 
 
   
+  </body>
+</html> 
 
-  
-<footer>
 
-</footer>
-<script src="ressurser.js">
-</script> <!-- For å sikre at HTML-dom-en er lastet inn før scriptet kjøres -->
-</body>
-</html>
