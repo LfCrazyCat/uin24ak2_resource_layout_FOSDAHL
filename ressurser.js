@@ -1,14 +1,16 @@
 const resources = [
+    
     {
 
-        var overskrifter = document.getElementById("h1");
         category: "HTML",
         text: "HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt.",
         sources: [
+            
             {
                 
                 title: "W3Schools",
                 url: "https://www.w3schools.com/html/"
+
             },
             {
                 title: "HTML Living standard",
@@ -18,13 +20,12 @@ const resources = [
                 title: "HTML.com Tutorials",
                 url: "https://html.com/"
             },
-        ]
+        ]    
 
      
     },
     {
-        let text = "CSS"
-        let results = text.link("css.html")
+       
         category: "CSS",
         text: "CSS står for Cascading StyleSheets, og brukes for å sette stilregler på HTML-elementer.",
         sources: [
@@ -45,7 +46,7 @@ const resources = [
                 url: "https://css-tricks.com/"
             },
         ]
-    },
+    }, 
     {
         category: "JavaScript",
         text: "JavaScript er et scriptspråk basert på EcmaScript. JavaScript kjører direkte i nettleseren, og brukes ofte til å manipulere HTML og CSS i webgrensnesnitt.",
@@ -101,3 +102,11 @@ const resources = [
         ]
     },
 ]
+
+function getFilteredList() {
+    if (!selectedCategory) {
+        return categoryList;
+    }
+    return categoryList.filter((item) => item.category === selectedCategory);
+}
+

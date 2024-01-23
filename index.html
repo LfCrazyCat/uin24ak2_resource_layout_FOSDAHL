@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link href="style.css" rel="stylesheet" media="all">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
 <!-- Henviser til Google Fonts over -->
 
 <title>Document</title>
-<script src="ressurser.js"></script> <!-- For å sikre at HTML-dom-en er lastet inn før scriptet kjøres -->
 </head>
 <body>
 
@@ -18,22 +17,44 @@
   
   <header>
     <nav>
-      <ul class="nav">
+      <span>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html" onclick="myFunction();">HTML</a>
+          </li>
+      </span>
+      <span>
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">HTML</a>
+          <a href="css.html" onclick="myFunction();">CSS</a>
         </li>
+      </span>
+      <span>
         <li class="nav-item">
-          <a href="css.html">CSS</a>
+          <a href="JavaScript.html" onclick="myFunction();"></a>
         </li>
+      </span>
+      <span>
         <li class="nav-item">
-          <a href="JavaScript.html">JavaScript</a>
+          <a href="React.html" onclick="myFunction();">React</a>
         </li>
+      </span>
+      <span>
         <li class="nav-item">
-          <a href="React.html">React</a>
-        </li>
-        <li class="nav-item">
-          <a href="SanityAndHeadlessCMS.html">Sanity and headless CMS</a>
-        </li>
+          <a href="SanityAndHeadlessCMS.html" onclick="myFunction();">Sanity and Headless</a>
+      </span>
+  
+          <!-- 
+          <a href="javascript:void(0)" onclick="myFunction();">HTML</a> -->
+    
+          <!-- 
+          <a href="javascript:void(0)" onclick="myFunction();">HTML</a> -->
+          <!-- 
+            Denne kan brukes om ikke det blir øyeblikkelig sendt videre til den spesfikke URL-en
+            href blir byttet ut med javascript:void(0). Da vil ikke retningen blir executed før det
+            er spesifisert i JS funksjonen
+          --> 
+
+   
       </ul>
     </nav>
   </header>
@@ -58,20 +79,22 @@
          </li> 
         
         </ul>
-
     </section>
 
 
   </main>
   <footer>
     <p>Innlevering i emnet UIN</p>
-    <p>Kilde: <a href=</p>
+    <p>Kilde: <a href="https://github.com/LfCrazyCat/uin24ak2_resource_layout_FOSDAHL">github.com/LfCrazyCat/uin24ak2_resource_layout_FOSDAHL</a></p>
   </footer>
+  <script>
+    getFilteredList()
+  </script>
 
  
 
 
-  
+  <script src="ressurser.js"></script> <!-- For å sikre at HTML-dom-en er lastet inn før scriptet kjøres -->
   </body>
 </html> 
 
