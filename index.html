@@ -5,77 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet" media="all">
-  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
-<link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
   <!-- Henviser til Google Fonts over -->
 
-  <title>Document</title>
+  <title>Ressursarkiv</title>
 </head>
 
 <body>
-
-
-
-  <header>
+  <header> </header> <!-- Hadde først nav i header men flyttet det til main som gjør at disse to kan "sitte sammen, slik de skal "-->
+  <main>
     <nav>
-      <span>
-        <ul class="nav">
+       <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" href="javascript:void(0)" onclick="showResource('HTML')">HTML</a>
+            <a href="javascript:void(0)" onclick="showResource('HTML')">HTML</a>
           </li>
-      </span>
-      <span>
-        <li class="nav-item">
+
+          <li class="nav-item">
           <a href="javascript:void(0)" onclick="showResource('CSS')">CSS</a>
         </li>
-      </span>
-      <span>
-        <li class="nav-item">
+
+         <li class="nav-item">
           <a href="javascript:void(0)" onclick="showResource('JavaScript')">JavaScript</a>
         </li>
-      </span>
-      <span>
+
         <li class="nav-item">
           <a href="javascript:void(0)" onclick="showResource('React')">React</a>
         </li>
-      </span>
-      <span>
+    
         <li class="nav-item">
           <a href="javascript:void(0)" onclick="showResource('Sanity and headless CMS')">Sanity and Headless</a>
-      </span>
-
-      <!-- 
-          <a href="javascript:void(0)" onclick="myFunction();">HTML</a> -->
-
-      <!-- 
-          <a href="javascript:void(0)" onclick="myFunction();">HTML</a> -->
-      <!-- 
-            Denne kan brukes om ikke det blir øyeblikkelig sendt videre til den spesfikke URL-en
-            href blir byttet ut med javascript:void(0). Da vil ikke retningen blir executed før det
-            er spesifisert i JS funksjonen
-          -->
-
-
+        </li>
       </ul>
     </nav>
-  </header>
 
-  <main> <!-- Hovedinnhold -->
-    <section id="resourceContainer"> <!-- Seksjon for hovedinnhold -->
-
-    </section>
-
+    <section id="resourceContainer"></section>
 
   </main>
-  <footer>
-    <p>Innlevering i emnet UIN</p>
-    <p>Kilde: <a
-        href="https://github.com/LfCrazyCat/uin24ak2_resource_layout_FOSDAHL">github.com/LfCrazyCat/uin24ak2_resource_layout_FOSDAHL</a>
-    </p>
-  </footer>
 
-  <script src="ressurser.js"></script> <!-- //For å sikre at HTML-dom-en er lastet inn før scriptet kjøres -->
+  <script src="ressurser.js"></script> <!-- For å sikre at HTML-dom-en er lastet inn før scriptet kjøres legges den over ende-tagggen i </body> -->
 
   <script>
     //Eventlistener som bruker DOMContentLoaded som kjører når siden er innlastet, kaller så på funskjonen showResource med argumentet HTML for 
@@ -84,17 +53,24 @@
     document.addEventListener('DOMContentLoaded', () => {
       showResource('HTML')
     })
+
     // Funksjonen med kategorien paramter som kjøres når man navigerer mellom de ulike menyvalg i <nav> 
-    function showResource(category) {
+      function showResource(category) {
+
       // Variabel som sparer den kategorien som man velger. Arrayen filterers og matcher mot den valgte kategoriern. 
       const chosenResource = resources.filter(resource => resource.category === category)
+
       // Variabelen som henter inn HTML elementet resourceContainer 
       const resourceContainer = document.getElementById('resourceContainer')
 
+
       //Variabel som mapper (maps) igjennom chosenResource arrayen som ble skapt overfor. 
       const resource = chosenResource.map(resource => {
-        // Varubalen som mapper igjennom resource får å ta ut URL samt title og legger inn dette i HTML-format. 
+
+
+        // Variabelen som mapper igjennom resource får å ta ut URL samt title og legger inn dette i HTML-format. 
         const resourceList = resource.sources.map(source => `<li><a href="${source.url}" target="_blank">${source.title}</a></li>`).join('')
+
         // Skaper opp HTML med hjelp av template literans, tar med kategori, tekst, samt. html-strengen som finnes i resourceList variabelen.
         return `
     <h1>${resource.category}</h1>
@@ -103,9 +79,9 @@
     `
     
       // Setter sammen all HTML til en streng og avslutter map prosessen. 
-      }).join('')
-      // Oppdaterer resourceContainer med all informasjon som er hentet frem og viser på siden, 
-    
+    }).join('')
+
+      // Oppdaterer resourceContainer med all informasjon som er hentet frem og viser på siden.
       resourceContainer.innerHTML = resource
     }
   </script>
